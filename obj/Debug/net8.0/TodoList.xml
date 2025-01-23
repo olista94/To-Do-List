@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TodoList</name>
+    </assembly>
+    <members>
+        <member name="T:TodoList.Controllers.TasksController">
+            <summary>
+            Controlador para gestionar las tareas de la aplicación.
+            </summary>
+        </member>
+        <member name="M:TodoList.Controllers.TasksController.#ctor(TodoList.Database.TodoContext)">
+            <summary>
+            Constructor del controlador de tareas.
+            </summary>
+            <param name="context">Contexto de base de datos.</param>
+        </member>
+        <member name="M:TodoList.Controllers.TasksController.GetTasks">
+            <summary>
+            Obtiene la lista de todas las tareas.
+            </summary>
+            <returns>Una lista de tareas.</returns>
+        </member>
+        <member name="M:TodoList.Controllers.TasksController.GetTask(System.Int32)">
+            <summary>
+            Obtiene una tarea específica por su ID.
+            </summary>
+            <param name="id">El ID de la tarea.</param>
+            <returns>La tarea correspondiente al ID proporcionado.</returns>
+        </member>
+        <member name="M:TodoList.Controllers.TasksController.CreateTask(TodoList.Models.TaskItem)">
+            <summary>
+            Crea una nueva tarea.
+            </summary>
+            <param name="taskItem">Los datos de la tarea a crear.</param>
+            <returns>La tarea creada.</returns>
+        </member>
+        <member name="M:TodoList.Controllers.TasksController.UpdateTask(System.Int32,TodoList.Models.TaskItem)">
+            <summary>
+            Actualiza una tarea existente.
+            </summary>
+            <param name="id">El ID de la tarea a actualizar.</param>
+            <param name="taskItem">Los nuevos datos de la tarea.</param>
+            <returns>Un resultado HTTP.</returns>
+        </member>
+        <member name="M:TodoList.Controllers.TasksController.DeleteTask(System.Int32)">
+            <summary>
+            Elimina una tarea existente.
+            </summary>
+            <param name="id">El ID de la tarea a eliminar.</param>
+            <returns>Un resultado HTTP.</returns>
+        </member>
+    </members>
+</doc>
